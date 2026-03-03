@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-card">
+            <h2>Hotel Booking Form</h2>
+
+            <form id="bookingForm">
+
+                <!-- Check-in Date -->
+                <div class="form-group">
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="form-group">
+                    <label for="checkout">Check-out Date</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <!-- Room Type -->
+                <div class="form-group">
+                    <label for="room">Room Type</label>
+                    <select id="room" required>
+                        <option value="">Select Room</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+
+                <!-- Guest Count -->
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" min="1" max="10"  placeholder="Enter guests" required>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-group">
+                    <label for="requests">Special Requests (Optional)</label>
+                    <textarea id="requests" rows="3"></textarea>
+                </div>
+
+                <button type="submit">Book Now</button>
+
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
